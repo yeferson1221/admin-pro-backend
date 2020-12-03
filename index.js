@@ -18,6 +18,10 @@ dbConnection();
 
 //rutas
 app.use('/api/usuarios', require('./routes/usuariosRutas'));
+app.use('/api/hospitales', require('./routes/hospitales'));
+app.use('/api/medicos', require('./routes/medicosRutas'));
+app.use('/api/todo', require('./routes/buscarRutas'));
+app.use('/api/fotosUploads', require('./routes/fotosUploads'));
 app.use('/api/login', require('./routes/auth'));
 
 
